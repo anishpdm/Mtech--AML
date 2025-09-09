@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
 import numpy as np
 
-#Read Dataset
+#Load Dataset
 dataset= pd.read_csv("data.csv")
 x= dataset[["population"]]
 y= dataset[["profit"]]
