@@ -14,6 +14,8 @@ model = lm.LinearRegression()
 model.fit(x,y)
 print("Intercept", model.intercept_)
 print("Coefficient", model.coef_)
+
+#Prediction
 input=pd.DataFrame([[35000]], columns=["population"])
 result=model.predict( input  )
 print( round(result[0][0] , 2))
